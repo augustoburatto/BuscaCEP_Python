@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<div id="container">
+    <div class="title">
+        <h1>ViaCEP</h1>
+    </div>
+    <div id="content">
+        <form method="post" action="{{ url_for('buscar') }}">
+            <label for="cep">CEP: </label>
+            <input type="text" name="num_cep" class="textarea" value="" /><br />
+            <input type="submit" />
+        </form>
+    </div>
+    <div id="content">
+        <form method="post" action="">
+            <label>CEP: {{cep}}</label><br />
+            <label>Rua: {{rua}}</label><br />
+            <label>Bairro: {{bairro}}</label><br />
+            <label>Cidade: {{cidade}} </label><br />
+            <label>Estado: {{uf}}</label><br />
+        </form>
+</div>
+{% endblock %}
