@@ -18,3 +18,9 @@
 - HMTL
 - CSS
 ```
+
+## Como utilizar
+```
+1. Clonar o repositório
+2.
+```
