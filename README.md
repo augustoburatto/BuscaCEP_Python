@@ -22,5 +22,5 @@
 ## Como utilizar
 ```
 1. Clonar o repositório
-2.
+2. Iniciar o servidor python no localhost pelo cep.py
 ```

@@ -12,7 +12,7 @@ app = Flask(__name__)
 #configuração da rota index.
 @app.route('/')
 def index():
-    return render_template('index.html', titulo='ViaCEP')
+    return render_template('busca_cep.html', titulo='ViaCEP')
     #renderizando o template lista e as variáveis desejadas. 
 
 @app.route('/buscar', methods=['POST'])
@@ -23,6 +23,6 @@ def buscar():
     bairro = endereco['bairro']
     cidade = endereco['cidade']
     uf = endereco['uf']
-    return render_template('index.html', titulo='ViaCEP', cep=cep, rua=rua, bairro=bairro, cidade=cidade, uf=uf)
+    return render_template('busca_cep.html', titulo='ViaCEP', cep=cep, rua=rua, bairro=bairro, cidade=cidade, uf=uf)
 
 app.run(debug = True)
